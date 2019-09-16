@@ -33,12 +33,25 @@ The project has 3 subdirectories:
     different degrees of certainty and verboseness.
 * `test-suite` contains several tests, including some uses of the plugin.
 
-Installation
-============
+# Installation
 
-The plugin works currently with Coq v8.7 (and any minor version). It requires
+The plugin works currently with Coq's last two major releases (v8.8, v8.9, and any minor version). It requires
 [UniCoq](http://github.com/unicoq/unicoq) to be
-installed. Mtac2 will be available in OPAM soon.
+installed.
+
+## OPAM
+
+Mtac2 can be installed through OPAM in the same way as UniCoq:
+
+```
+opam repo add coq-released https://coq.inria.fr/opam/released
+opam install coq-mtac2
+```
+
+This command will install Mtac2 and UniCoq as a dependency.
+
+## Manual
+
 For the moment you should have coqc, ocamlc and make in your path.
 Then simply do:
 ```
